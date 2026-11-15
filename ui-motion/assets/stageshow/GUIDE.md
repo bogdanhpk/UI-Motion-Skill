@@ -6,6 +6,8 @@
 
 Miniature product UI: a believable interface, framed in its space, as one still or a short animation in which one thing happens. The viewer recognizes the screen and sees the thing happen.
 
+For a **product feature preview**, read [Feature previews](../../references/feature-previews.md) first. Its default requires a visible browser header, a finished focal feature, and a readable result at the intended size. Preserve that header even when the general crop rules below suggest cutting away context. Use the kit's `Window` browser variant only where project rules permit it; required product components and tokens still take precedence.
+
 ## The one idea
 
 **It reads as a real product, simplified to what the viewer needs, framed with intent, and every motion has a cause.**

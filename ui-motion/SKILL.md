@@ -1,8 +1,8 @@
 ---
 name: ui-motion
-description: "Build and refine UI motion and visual polish: interactive transitions, surfaces and icons, animated Figma or screenshot designs, product demo loops with cursors, and SwiftUI animation patterns. Use when asked to animate an interface, improve UI details, match motion to an interaction, or create an animated product showcase. Preserve the project's component library and design tokens."
+description: "Create high-quality product feature previews with a visible browser header, and refine UI motion and visual polish: interactive transitions, surfaces and icons, animated designs, product demos, and SwiftUI patterns. Use when asked for a feature preview, browser-framed product shot, interface animation, UI polish, motion matching, or an animated showcase. Preserve the project's component library and design tokens."
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   repository: "https://github.com/bogdanhpk/UI-Motion-Skill"
 ---
 
@@ -17,10 +17,17 @@ Implement motion and UI polish that make the requested interaction or visual sto
 | Animate a working UI: press, hover, menu, modal, drawer, toast, accordion, gesture, state transition | [Product motion](references/product-motion.md); load the linked recipes for the interaction |
 | Improve UI details, surfaces, nested radii, optical alignment, icons, or existing transitions | [UI polish](references/polish/guide.md); load only its relevant detail files |
 | Animate a supplied Figma frame, screenshot, or static design while preserving it | [Design to motion](references/design-to-motion.md) |
+| Create a product feature preview, still or animated, with a visible browser header | [Feature previews](references/feature-previews.md); use the product-demo kit only where the project's component rules allow it |
 | Author a product illustration, cursor walkthrough, or demo loop without an exact source frame | [Product demos](assets/stageshow/GUIDE.md); its references, kit, examples, and recording tools are bundled alongside it |
 | Choose or implement motion in SwiftUI | [SwiftUI matching](references/swiftui/guide.md), then the relevant catalog section if system motion is insufficient |
 
 Tasks can combine modes. For example, improve a menu's alignment with UI polish and implement its transition with product motion. A supplied design remains the visual source of truth; a demo kit must not redesign it. SwiftUI uses platform APIs rather than web recipes.
+
+## Product feature previews
+
+When asked for a feature preview, make one feature and its benefit legible inside a believable product interface. Keep a browser header visible above the product by default, including in the poster and narrow composition. Use one existing browser frame; do not draw window controls or an address field from scratch. Keep an existing header once if the source already includes it. A specifically requested phone, native-app frame, or frameless composition overrides this default.
+
+The [feature-preview guide](references/feature-previews.md) defines composition, framing, motion, and observable quality checks. Match the actual product's components, content, and tokens; the focal area must look like a finished product rather than a wireframe. Check the result at its real display size before calling it finished.
 
 ## Motion quality
 
@@ -81,6 +88,7 @@ Provide the implemented result and a brief account of what changed, the importan
 ## Resource map
 
 - [Motion principles](references/motion-principles.md): sourced Apple, Material, Fluent, and Carbon guidance, practical decisions, and observable quality checks.
+- [Feature previews](references/feature-previews.md): polished product feature previews with a persistent browser header, a clear focal feature, a strong poster, and quality checks at the final size.
 - [Product recipes](references/product-recipes.md): press, overlay, toast, collapse, stagger, hold, tab indicator, scroll reveal, drag, crossfade, and WAAPI examples.
 - [UI polish guide](references/polish/guide.md): surfaces, icons, transitions, enter/exit, and performance references.
 - [Design to motion](references/design-to-motion.md): source fidelity, layer geometry, deterministic clocks, story loops, capture, and encoding.
